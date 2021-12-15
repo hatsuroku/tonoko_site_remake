@@ -1,0 +1,16 @@
+$backgound-font-size: 48px;
+
+.background {
+  position: absolute;
+  text-align: end;
+  overflow: hidden;
+  padding: 8px;
+  bottom: $backgound-font-size;
+  right: 0;
+
+  .fonts {
+    font-size: $backgound-font-size;
+    color: rgba($color: #000000, $alpha: 0.145);
+    font-family: 'Futura', 'Verdana', 'sans-serif';
+  }
+}

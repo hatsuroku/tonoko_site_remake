@@ -1,0 +1,55 @@
+$cardWidth: 300px;
+$font: "Gill Sans", "Lucida Grande", Helvetica, sans-serif;
+$xPadding: 20px;
+$yPadding: 10px;
+$cardPicHeight: 150px;
+
+.cardContainer {
+    font-family: $font;
+    width: $cardWidth;
+    box-shadow: 0px 0px 8px 0px #C1C1C1;
+}
+
+.cardPicCon {
+    position: relative;
+}
+
+.cardPic {
+    height: $cardPicHeight;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cardFont {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+    color: white;
+    text-shadow: rgb(0 0 0) 2px 1px 5px;
+    padding: $yPadding $xPadding;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.616));
+}
+
+.cardFrame {
+    padding: $xPadding;
+    font-size: 14px;
+}
+
+.hint {
+    color: rgb(67, 98, 166);
+    font-size: 14px;
+    text-align: end;
+    font-weight: bold;
+    cursor: pointer;
+
+    & + * {
+        margin-top: 8px;
+    }
+
+    &.secondary {
+        color: rgb(165, 165, 167);
+    }
+}
